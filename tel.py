@@ -45,7 +45,7 @@ def audio_hendler(update,context ):
 	oga_to_wav('voice/'+str(update.message.from_user.id)+'/ogaFolder/'+name)
 
 
-updater = Updater('1330025796:AAGCEqc5vQVSw-lCp5wRW4J7M6qVwa1zmIk', use_context=True)
+updater = Updater('TOKEN', use_context=True)
 
 updater.dispatcher.add_handler(MessageHandler(Filters.photo, image_handler))
 updater.dispatcher.add_handler(MessageHandler(Filters.voice, audio_hendler))
